@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp"
+    app:strokeColor="@color/gray"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/gray"
+        android:padding="16dp">
+
+        <!-- Priority Indicator -->
+        <View
+            android:id="@+id/viewPriorityIndicator"
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:background="@color/green"
+            android:layout_marginEnd="12dp" />
+
+        <!-- Task Content -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTaskTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Task Title"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvTaskDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Task Description"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="4dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <!-- Priority Chip -->
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipPriority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Low"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+
+                    style="@style/Widget.MaterialComponents.Chip.Action"
+                    app:chipBackgroundColor="@color/green"
+                    app:chipCornerRadius="8dp"
+                    app:chipStrokeWidth="0dp"
+                    app:rippleColor="@android:color/transparent"
+
+                    app:chipIcon="@drawable/baseline_label_12"
+                    app:chipIconTint="@color/white"
+                    app:chipIconSize="16dp"
+                    app:iconStartPadding="4dp"
+
+                    app:ensureMinTouchTargetSize="false"
+                    app:chipMinHeight="24dp"
+                    />
+
+                <!-- Status Chip -->
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pending"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="8dp"
+                    style="@style/Widget.MaterialComponents.Chip.Action"
+                    app:chipBackgroundColor="@color/primary_200"
+                    app:chipCornerRadius="8dp"
+                    app:chipStrokeWidth="0dp"
+                    app:rippleColor="@android:color/transparent"
+
+                    app:chipIcon="@drawable/twotone_horizontal_rule_24"
+                    app:chipIconTint="@color/white"
+                    app:chipIconSize="16dp"
+                    app:iconStartPadding="4dp"
+
+                    app:ensureMinTouchTargetSize="false"
+                    app:chipMinHeight="24dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
