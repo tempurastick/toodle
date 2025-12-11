@@ -7,6 +7,7 @@ Student name:
 Jasmin Martens
 
 A demonstration is included here: [follow link](./documentation_assets/toodle_video.webm)
+the learning diary can be found here: [follow link](./documentation_assets/learning_diary_martens_jasmin.pdf)
 
 ## How to run
 
